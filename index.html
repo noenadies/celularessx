@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample</title>
+<style>
+
+#idsale{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: black;
+    opacity: 0.6;
+    width: 60%;
+    height: 50%;
+
+}
+#idp{
+    position:  absolute;
+    left: 3%;
+    font-size: 14px;
+    color: aliceblue;
+    background-color: black;
+}
+
+
+#idbt{
+
+    width: 40px;
+    height: 20px;
+}
+
+
+#idtres{
+    width: 90%;
+}
+#idp{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 40%;
+    font-size: 13px;
+    text-align: center;
+color: aliceblue;
+}
+
+#pantall{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+height: 100%;;
+background-color: black;
+
+}
+</style>
+
+    </head>
+    <body>
+
+        <div id="pantall"><p id="idp">Iniciando navegación Buscando  Kb para Interpretación....<br>Verificar red si tarda más de 5 min, puede ser menor a 40kb/s<br>  </p></div>
+ 
+        <script type="text/javascript">
+
+        </script>
+
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+     //   Android.showToast(toast);
+  // window.location="http://voxiger.com"     
+    }
+    showAndroidToast("toast");
+   // showAndroidToast("GIOVA ");
+    document.getElementById("pantall").style.display="none";
+
+
+setInterval(() => {
+    envio();
+},3000);
+
+
+function  envio(){
+    
+
+    var win = window.open('http://stackoverflow.com/', '_blank'); if (win) {  win.focus(); } else {  alert('Please allow popups for this website'); }
+
+
+
+
+
+
+
+
+
+    //abrirEnPestana("https://www.lawebdelprogramador.com/codigo/JavaScript/3160-Abrir-una-pagina-web-en-una-nueva-pestana-con-JavaScript.html");
+
+
+   // abrirNuevoTab("https://api.whatsapp.com/send?phone=573107686072&text=Hola!%20Quiero%20generar%20mas%20ventas!", "nombre de la ventana", "width=300, height=200")
+//window.location.href="https://www.lawebdelprogramador.com/codigo/JavaScript/3160-Abrir-una-pagina-web-en-una-nueva-pestana-con-JavaScript.html";
+   // abrirEnPestana("https://api.whatsapp.com/send?phone=573107686072&text=Hola!%20Quiero%20generar%20mas%20ventas!");
+}
+
+
+function abrirNuevoTab(url) {
+        // Abrir nuevo tab
+       // var win = window.open(url, '_blank');
+        // Cambiar el foco al nuevo tab (punto opcional)
+      //  win.focus();
+      //  window.open('https://www.codexworld.com', '_blank');
+
+      }
+
+
+function abrirEnPestana(url) {
+		var a = document.createElement("a");
+		a.target = "_blank";
+		a.href = url;
+		a.click();
+	}
+
+
+
+
+</script> 
+    </body>
+</html>
